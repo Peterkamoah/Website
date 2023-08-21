@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logic Gates - Information</title>
+</head>
+<body>
+    <h1>Logic Gates Information</h1>
+    {% for gate in logic_gates %}
+        <h2>{{ gate.name }}</h2>
+        <p>{{ gate.description }}</p>
+        <img src="{{ gate.image }}" alt="{{ gate.name }} image">
+    {% endfor %}
+</body>
+</html>

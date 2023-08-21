@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logic Gates - Quiz</title>
+</head>
+<body>
+    <h1>Logic Gates Quiz</h1>
+    <form method="post" action="/questions">
+        {% for question in questions %}
+            <h2>{{ question.question }}</h2>
+            <input type="text" name="{{ question.question }}">
+        {% endfor %}
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
